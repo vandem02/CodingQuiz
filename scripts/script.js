@@ -37,9 +37,9 @@ $("#add").on("click", function () {
 });
 
 function q1wrong() {
-    time -= 10
-    if (time < 0) time = 0
-    $(".time").text(time);
+  time -= 10;
+  if (time < 0) time = 0;
+  $(".time").text(time);
   $("#feedback").text("Incorrect!");
   $("#feedback").css("color", "red");
   $("#q1").hide();
@@ -54,9 +54,9 @@ function q1right() {
 }
 
 function q2wrong() {
-    time -= 10
-    if (time < 0) time = 0
-    $(".time").text(time);
+  time -= 10;
+  if (time < 0) time = 0;
+  $(".time").text(time);
   $("#feedback").text("Incorrect!");
   $("#feedback").css("color", "red");
   $("#q2").hide();
@@ -71,9 +71,9 @@ function q2right() {
 }
 
 function q3wrong() {
-    time -= 10
-    if (time < 0) time = 0
-    $(".time").text(time);
+  time -= 10;
+  if (time < 0) time = 0;
+  $(".time").text(time);
   $("#feedback").text("Incorrect!");
   $("#feedback").css("color", "red");
   $("#q3").hide();
@@ -88,9 +88,9 @@ function q3right() {
 }
 
 function q4wrong() {
-    time -= 10
-    if (time < 0) time = 0
-    $(".time").text(time);
+  time -= 10;
+  if (time < 0) time = 0;
+  $(".time").text(time);
   $("#feedback").text("Incorrect!");
   $("#feedback").css("color", "red");
   $("#q4").hide();
@@ -105,16 +105,16 @@ function q4right() {
 }
 
 function q5wrong() {
-    time -= 10
-    if (time < 0) time = 0
-    $(".time").text(time);
+  time -= 10;
+  if (time < 0) time = 0;
+  $(".time").text(time);
   $("#feedback").text("Incorrect!");
   $("#feedback").css("color", "red");
-  endQuiz()
+  endQuiz();
 }
 
 function q5right() {
   $("#feedback").text("Correct!");
   $("#feedback").css("color", "green");
-  endQuiz()
+  endQuiz();
 }
