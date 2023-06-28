@@ -2,6 +2,30 @@
     display: none;
 }
 
-table {
+#quiz, #scoreboard-add, #scoreboard {
+    margin-top: 100px;
+}
+
+table, th, td {
     border: 1px solid black;
+    margin: 100px auto 0 auto;
+}
+
+body {
+    background-color: lightgray;
+    text-align: center;
+    font-family: 'Roboto', serif;
+}
+
+button {
+    font-size: 20px;
+    font-family: 'Roboto', serif;
+    color: white;
+    background-color: purple;
+    margin: 5px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: orchid;
 }

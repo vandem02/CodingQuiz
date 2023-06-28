@@ -4,24 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <title>Coding Quiz!</title>
   </head>
   <body>
     <div id="quiz">
       <p>Time: <span class="time">80</span></p>
       <div id="home">
         <h1>Coding Quiz</h1>
-        <p>Answer all of the questions within 80 seconds. Wrong answers will cost 10 seconds.</p>
+        <p>Answer five questions within 80 seconds. Wrong answers will cost 10 seconds.</p>
         <button onclick="start()">Start</button>
       </div>
       <div id="q1">
         <h1>Question 1</h1>
-        <p>A ______ loop executes the same code repeatedly until a condition is false.</p>
-        <button onclick="q1wrong()">For</button>
-        <button onclick="q1wrong()">For Each</button>
-        <button onclick="q1right()">While</button>
+        <p>A ______ loop executes the same code repeatedly until its loop condition is false.</p>
+        <button onclick="q1wrong()">For</button><br>
+        <button onclick="q1wrong()">For Each</button><br>
+        <button onclick="q1right()">While</button><br>
         <button onclick="q1wrong()">Continuous</button>
       </div>
+      <div id="q2">
+        <h1>Question 2</h1>
+        <p>What defines a function body?</p>
+        <button onclick="q2wrong()">Parentheses</button><br>
+        <button onclick="q2right()">Curly Braces</button><br>
+        <button onclick="q2wrong()">Brackets</button><br>
+        <button onclick="q2wrong()">None of these</button>
+      </div>
+      <div id="q3">
+        <h1>Question 3</h1>
+        <p>Which CSS property allows you to add spacing inside of an element?</p>
+        <button onclick="q3wrong()">Border</button><br>
+        <button onclick="q3wrong()">Margin</button><br>
+        <button onclick="q3wrong()">Space-inside</button><br>
+        <button onclick="q3right()">Padding</button>
+      </div>
+      <div id="q4">
+        <h1>Question 4</h1>
+        <p>How would you access the third element of an array called fruits?</p>
+        <button onclick="q4right()">fruits[2]</button><br>
+        <button onclick="q4wrong()">fruits[3]</button><br>
+        <button onclick="q4wrong()">fruits(3)</button><br>
+        <button onclick="q4wrong()">fruits{3}</button>
+      </div>
+      <div id="q5">
+        <h1>Question 5</h1>
+        <p>What allows you to store a variable in your browser even after you close and reopen it?</p>
+        <button onclick="q5wrong()">Session Storage</button><br>
+        <button onclick="q5wrong()">Caching</button><br>
+        <button onclick="q5right()">Local Storage</button><br>
+        <button onclick="q5wrong()">Variable Storage</button>
+      </div>
+      <p id="feedback"></p>
     </div>
     <div id="scoreboard-add">
       <h1>You got <span class="time">80</span> points.</h1>
