@@ -1,3 +1,7 @@
-#q1, #q2, #q3, #q4, #q5 {
+#q1, #q2, #q3, #q4, #q5, #scoreboard-add, #scoreboard {
     display: none;
+}
+
+table {
+    border: 1px solid black;
 }

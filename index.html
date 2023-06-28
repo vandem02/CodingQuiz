@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <p>Time: <span id="time">80</span></p>
-    <div id="home">
+  </head>
+  <body>
+    <div id="quiz">
+      <p>Time: <span class="time">80</span></p>
+      <div id="home">
         <h1>Coding Quiz</h1>
         <p>Answer all of the questions within 80 seconds. Wrong answers will cost 10 seconds.</p>
         <button onclick="start()">Start</button>
-    </div>
-    <div id="q1">
+      </div>
+      <div id="q1">
         <h1>Question 1</h1>
         <p>A ______ loop executes the same code repeatedly until a condition is false.</p>
         <button onclick="q1wrong()">For</button>
         <button onclick="q1wrong()">For Each</button>
         <button onclick="q1right()">While</button>
         <button onclick="q1wrong()">Continuous</button>
-
+      </div>
+    </div>
+    <div id="scoreboard-add">
+      <h1>You got <span class="time">80</span> points.</h1>
+      <input id="initials" type="text" placeholder="Initials" />
+      <button id="add">Add to scoreboard</button>
+    </div>
+    <div id="scoreboard">
+      <table>
+        <tr>
+          <th>Player</th>
+          <th>Score</th>
+        </tr>
+      </table>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
-</body>
+  </body>
 </html>
